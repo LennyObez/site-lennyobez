@@ -1,0 +1,57 @@
+name: Feature request
+description: Suggest a new feature for lennyobez.com
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear description of the feature you'd like.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: What problem does this feature solve? Why is it needed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How should this feature work?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      description: Which part of the site would this affect?
+      options:
+        - Landing
+        - Development
+        - Photography
+        - Explore
+        - Blog
+        - About
+        - Contact
+        - Resume
+        - Colophon
+        - Legal
+        - Infrastructure
+        - Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other approaches did you consider?
+    validations:
+      required: false
